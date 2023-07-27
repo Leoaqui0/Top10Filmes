@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.Titulo{
+    color:white;
+    position: center;
+    text-align: center;
+}
+
+img{
+    float: left;
+    padding-left: 500px;
+    max-width: 150px;
+    height: 200px;
+}
+
+.botoes{
+    display: grid;
+
+    
+
+    border: 2px solid #E6E6E6; 
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 2px; 
+}
+
+.btn{
+    cursor: pointer;
+    border: 2px solid #3f3f3f;
+    border-radius: 20px;
+}
+
+
+.Textinho{
+    text-align: center;
+    font-size: 50px;
+}
+
+.Num{
+    color: rgb(255, 0, 0);
+    background-color: #000000;
+    border-radius: 15px;
+    justify-content: left;
+    text-align: center;
+    font-size: 25px;
+}
