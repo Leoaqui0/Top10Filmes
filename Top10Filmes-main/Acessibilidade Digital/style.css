@@ -1,0 +1,91 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.Titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    color:white;
+
+    border: 2px solid #E6E6E6; 
+    border-radius: 20px;
+    
+}
+
+img{
+    float: center;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.botoes{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-between;
+
+
+    
+
+    border: 2px solid #E6E6E6; 
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.botoes1{
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content: space-between;
+
+
+    
+
+    border: 2px solid #E6E6E6; 
+    border-radius: 20px;
+    padding: 20px;
+}
+.btn{
+    width: 170px;
+    height: 320px;
+
+    cursor: pointer;
+
+    padding-bottom: 10px;
+
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(51, 51, 51);
+    color:white;
+    transition: 2s ;
+}
+
+.Textinho{
+    text-align: center;
+    font-size: 10px;
+    color:#E6E6E6;
+}
+
+.Num{
+    color: rgb(255, 0, 0);
+    background-color: #000000;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: top;
+    font-size: 25px;
+}
+
+.Nome{
+    color:white;
+    text-align: center;
+
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+}
