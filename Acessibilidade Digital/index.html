@@ -9,73 +9,159 @@
 </head>
 <body>
     <header class="Titulo">
-        <h1 >
+        <p onmouseover="playAudioTexto()">
             Top 10 Filmes Animados
-        </h1>
-        <audio controls autoplay> 
-            <source src="Audio/Top 10 Filmes Animad.m4a" type="audio/ogg">
-            <source src="Audio/Top 10 Filmes Animad.m4a" type="audio/mpeg">
-            Your browser does not support the audio element.
+        </p>
+        <audio id="audioTexto">
+            <source src="Audio/Top 10 Filmes Animad.mp3" type="audio/mpeg">
         </audio>
 
     </header></br>
     <div class="botoes">
-        <button class="btn">
+        <button onmouseover="playAudio1()" class="btn">
             <h3 class="Num">01º</h3>
             <img src="Imagens/A Viagem de Chihiro (2001).jfif">
             <h2 class="Textinho">A Viagem de Chihiro (2001)</h2>
+            <audio id="audio1">
+                <source src="Audio/Primeiro A Viagem de.mp3" type="audio/ogg">
+                <source src="Audio/Primeiro A Viagem de.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio2()" class="btn">
             <h3 class="Num">02º</h3>
             <img src="Imagens/Homem-Aranha no Aranhaverso (2018).jfif">
             <h2 class="Textinho">Homem-Aranha no Aranhaverso (2018)</h2>
+            <audio id="audio2">
+                <source src="Audio/Segundo Homem Aranha.mp3" type="audio/ogg">
+                <source src="Audio/Segundo Homem Aranha.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio3()" class="btn">
             <h3 class="Num">03º</h3>
             <img src="Imagens/Rei Leão.jfif">
             <h2 class="Textinho">O Rei Leão (1994)</h2>
+            <audio id="audio3">
+                <source src="Audio/Terceiro O Rei Leão.mp3" type="audio/ogg">
+                <source src="Audio/Terceiro O Rei Leão.mp3" type="audio/mpeg">
+            </audio>
         </button></br>
-        <button class="btn">
+        <button onmouseover="playAudio4()" class="btn">
             <h3 class="Num">04º</h3>
             <img src="Imagens/Túmulo dos Vagalumes (1988).jfif">
             <h2 class="Textinho">Túmulo dos Vagalumes (1988)</h2>
+            <audio id="audio4">
+                <source src="Audio/Quarto Túmulo dos Va.mp3" type="audio/ogg">
+                <source src="Audio/Quarto Túmulo dos Va.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio5()" class="btn">
             <h3 class="Num">05º</h3>
             <img src="Imagens/WALL-E (2008).jfif">
             <h2 class="Textinho">WALL-E (2008)</h2>
+            <audio id="audio5">
+                <source src="Audio/Quinto WALL E.mp3" type="audio/ogg">
+                <source src="Audio/Quinto WALL E.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
     </div> </br>
     <div class="botoes1">
 
-        <button class="btn">
+        <button onmouseover="playAudio6()" class="btn">
             <h3 class="Num">06º</h3>
             <img src="Imagens/Princesa Mononoke (1997).jpg">
             <h2 class="Textinho">Princesa Mononoke (1997)</h2>
+            <audio id="audio6">
+                <source src="Audio/Sexto Princesa Monon.mp3" type="audio/ogg">
+                <source src="Audio/Sexto Princesa Monon.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio7()" class="btn">
             <h3 class="Num">07º</h3>
             <img src="Imagens/Viva.jfif">
             <h2 class="Textinho">Viva: A Vida é uma Festa (2017)</h2>
+            <audio id="audio7">
+                <source src="Audio/Sétimo Viva.mp3" type="audio/ogg">
+                <source src="Audio/Sétimo Viva.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio8()" class="btn">
             <h3 class="Num">08º</h3>
             <img src="Imagens/Seu Nome (2016).jfif">
             <h2 class="Textinho">Seu Nome (2016)</h2>
+            <audio id="audio8">
+                <source src="Audio/Oitavo Your name.mp3" type="audio/ogg">
+                <source src="Audio/Oitavo Your name.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio9()" class="btn">
             <h3 class="Num">09º</h3>
             <img src="Imagens/Toy.jfif">
             <h2 class="Textinho">Toy Story (1995)</h2>
+            <audio id="audio9">
+                <source src="Audio/Nono Toy Story.mp3" type="audio/ogg">
+                <source src="Audio/Nono Toy Story.mp3" type="audio/mpeg">
+            </audio>
         </button ></br>
-        <button class="btn">
+        <button onmouseover="playAudio10()" class="btn">
             <h3 class="Num">10º</h3>
             <img src="Imagens/Toy3.jpg">
             <h2 class="Textinho">Toy Story 3 (2010)</h2>
+            <audio id="audio10">
+                <source src="Audio/Décimo Toy Story 3.mp3" type="audio/ogg">
+                <source src="Audio/Décimo Toy Story 3.mp3" type="audio/mpeg">
+            </audio>
         </button></br>
     </div> </br>
     <div class="Nome">  
         <h7>&copy Leonardo e Thiago</h7>
     </div>
+    <script>
+        function playAudio1() {
+            var audio1 = document.getElementById('audio1');
+            audio1.play();
+        }
+        function playAudio2() {
+            var audio2 = document.getElementById('audio2');
+            audio2.play();
+        }
+        function playAudio3() {
+            var audio3 = document.getElementById('audio3');
+            audio3.play();
+        }
+        function playAudio4() {
+            var audio4 = document.getElementById('audio4');
+            audio4.play();
+        }
+        function playAudio5() {
+            var audio5 = document.getElementById('audio5');
+            audio5.play();
+        }
+        function playAudio6() {
+            var audio6 = document.getElementById('audio6');
+            audio6.play();
+        }
+        function playAudio7() {
+            var audio7 = document.getElementById('audio7');
+            audio7.play();
+        }
+        function playAudio8() {
+            var audio8 = document.getElementById('audio8');
+            audio8.play();
+        }
+        function playAudio9() {
+            var audio9 = document.getElementById('audio9');
+            audio9.play();
+        }
+        function playAudio10() {
+            var audio10 = document.getElementById('audio10');
+            audio10.play();
+        }
+
+
+        function playAudioTexto() {
+        var audioTexto = document.getElementById('audioTexto');
+        audioTexto.play();
+    }
+    </script>
 </body>
 </html>
